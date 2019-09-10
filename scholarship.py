@@ -1,5 +1,5 @@
-
-# coding: utf-8
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 
 # In[1]:
 
@@ -7,10 +7,16 @@
 from pyquery import PyQuery as pq
 import re
 import tkinter as tk
+
+
 window = tk.Tk()
 window.title('scholarship')
-window.geometry('600x125')
-doc = pq(url="http://www.ce.ntu.edu.tw/最新消息/獎學金/",encoding='utf-8')
+window.geometry('600x200')
+
+#result = 'http://www.ce.ntu.edu.tw/最新消息/獎學金/'
+result = 'http://www.ce.ntu.edu.tw/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/%E7%8D%8E%E5%AD%B8%E9%87%91/'
+doc = pq(url=result,encoding='utf-8')
+
 
 
 # In[2]:
